@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DasHost</title>
+    <title>Dashost</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
@@ -18,12 +19,26 @@
             text-align: center;
             font-size: 24px;
             color: #333;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div class="centered-text">
         Estamos trabajando en esto ❤
+    </div>
+    <div class="buttons">
+        <button onclick="window.location.href='https://www.ejemplo1.com'">Botón 1</button>
+        <button onclick="window.location.href='https://www.ejemplo2.com'">Botón 2</button>
     </div>
 </body>
 </html>
