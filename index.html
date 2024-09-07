@@ -33,7 +33,7 @@
             display: flex;
             gap: 10px;
         }
-        .boton-bonito {
+        .botones {
             background-color: #4CAF50; /* Verde */
             border: none;
             color: white;
@@ -48,7 +48,7 @@
             transition-duration: 0.4s;
         }
 
-        .boton-bonito:hover {
+        .botones:hover {
             background-color: white;
             color: black;
             border: 2px solid #4CAF50;
@@ -56,22 +56,6 @@
         .image {
             margin-bottom: 20px;
         }
-        .image-button {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 0;
-        }
-        .image-button img {
-            width: 75px;
-            height: auto;
-        }
-        .author-text {
-            text-align: center;
-            color: #c0c0c0;
     </style>
 </head>
 <body>
@@ -80,21 +64,12 @@
             <img src="image.png" alt="Dastools">
         </div>
         Dastools on PS3HEN
-        <div class="buttons">
-            <button class="boton-bonito" onclick="window.location.href='https://www.mediafire.com/file/nruvv7j63kbs9pd/Dastools.pkg/file'">Dastools (1.2)</button>
-            <button class="boton-bonito" onclick="window.location.href='https://www.mediafire.com/file/3ah9rlo4iq2h6v8/SuperFix_%2528Dastools%2529.pkg/file'">SuperFix de la Dastools (HEN)</button>
+        <div>
+            <button class="botones" onclick="window.location.href='https://www.mediafire.com/file/nruvv7j63kbs9pd/Dastools.pkg/file'">Dastools (1.2)</button>
+            <button class="botones" onclick="window.location.href='https://www.mediafire.com/file/3ah9rlo4iq2h6v8/SuperFix_%2528Dastools%2529.pkg/file'">SuperFix de la Dastools (HEN)</button>
         </div>
         <div>
-            <button class="boton-bonito" onclick="window.location.href='https://www.mediafire.com/file/tm4t5elx6yeey5k/Dastools.rar/file'">Pack de tiendas (USB fat32)</button>
-        </div>
-    </div>
-    <div class="image-button" onclick="window.location.href='https://www.youtube.com/@Dasiller'">
-        <img src="dasiller.png" alt="Author_image">
-        <div class="author-text">
-              Developer
-        </div>
-        <div class="author-text">
-              @Dasiller
+            <button class="botones" onclick="window.location.href='https://www.mediafire.com/file/tm4t5elx6yeey5k/Dastools.rar/file'">Pack de tiendas (USB fat32)</button>
         </div>
     </div>
 </body>
