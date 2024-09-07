@@ -1,4 +1,4 @@
-<!Dasthost code>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -33,14 +33,25 @@
             display: flex;
             gap: 10px;
         }
-        button {
-            padding: 10px 20px;
+        .boton-bonito {
+            background-color: #4CAF50; /* Verde */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
             font-size: 16px;
+            margin: 4px 2px;
             cursor: pointer;
+            border-radius: 12px;
+            transition-duration: 0.4s;
         }
-        button2 {
-            padding: 10px 20px;
-            font-size: 16px;
+
+        .boton-bonito:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
         }
         .image {
             margin-bottom: 20px;
@@ -48,8 +59,11 @@
         .image-button {
             position: absolute;
             bottom: 1px;
-            right: 1px;
+            right: 10px;
             cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
         }
         .image-button img {
             width: 75px;
@@ -58,16 +72,6 @@
         .author-text {
             text-align: center;
             color: #c0c0c0;
-        }
-        .designer {
-            position: absolute;
-            bottom: 1px;
-            left: 1px;
-        }
-        .designer img {
-            width: 75px;
-            height: auto;
-        }
     </style>
 </head>
 <body>
@@ -77,17 +81,15 @@
         </div>
         Dastools on PS3HEN
         <div class="buttons">
-            <button onclick="window.location.href='https://www.mediafire.com/file/nruvv7j63kbs9pd/Dastools.pkg/file'">Dastools (1.2)</button>
-            <button onclick="window.location.href='https://www.mediafire.com/file/3ah9rlo4iq2h6v8/SuperFix_%2528Dastools%2529.pkg/file'">SuperFix de la Dastools (HEN)</button>
+            <button class="boton-bonito" onclick="window.location.href='https://www.mediafire.com/file/nruvv7j63kbs9pd/Dastools.pkg/file'">Dastools (1.2)</button>
+            <button class="boton-bonito" onclick="window.location.href='https://www.mediafire.com/file/3ah9rlo4iq2h6v8/SuperFix_%2528Dastools%2529.pkg/file'">SuperFix de la Dastools (HEN)</button>
         </div>
         <div>
-            <button onclick="window.location.href='https://www.mediafire.com/file/tm4t5elx6yeey5k/Dastools.rar/file'">Pack de tiendas (USB fat32)</button>
+            <button class="boton-bonito" onclick="window.location.href='https://www.mediafire.com/file/tm4t5elx6yeey5k/Dastools.rar/file'">Pack de tiendas (USB fat32)</button>
         </div>
     </div>
-    <div class="image-button">
-        <button2 onclick="window.location.href='https://www.youtube.com/@Dasiller'">
-            <img src="dasiller.png" alt="Author_image">
-        </button2>
+    <div class="image-button" onclick="window.location.href='https://www.youtube.com/@Dasiller'">
+        <img src="dasiller.png" alt="Author_image">
         <div class="author-text">
               Developer
         </div>
