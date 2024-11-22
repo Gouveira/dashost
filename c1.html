@@ -46,7 +46,7 @@
 
     <script>
         // Configurar la fecha objetivo para la cuenta regresiva
-        const fechaObjetivo = new Date('December 29, 2024 00:00:00').getTime();
+        const fechaObjetivo = new Date('December 29, 2023 00:00:00').getTime();
 
         // Actualizar la cuenta regresiva cada segundo
         const intervalo = setInterval(function() {
@@ -66,7 +66,7 @@
             // Si la cuenta regresiva ha terminado
             if (distancia < 0) {
                 clearInterval(intervalo);
-                document.getElementById('cuenta-regresiva').innerHTML = "¡Es el 29 de diciembre!";
+                document.getElementById('cuenta-regresiva').innerHTML = "Feliz mi propio cumpleaños :)";
             }
         }, 1000);
     </script>
