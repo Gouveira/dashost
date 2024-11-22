@@ -65,9 +65,7 @@
 
             // Si la cuenta regresiva ha terminado
             if (distancia < 0) { 
-                setTimeout(function(){
-                    location.href="https://dasiller.github.io/dashost/c1/index.html";
-                }, 2000); 
+                location.href="https://dasiller.github.io/dashost/c1/index.html";
                 clearInterval(intervalo);
                 document.getElementById('cuenta-regresiva').innerHTML = "Feliz mi propio cumpleaños :)";
                 function createFirework() { const firework = document.createElement('div'); firework.className = 'firework'; firework.style.left = Math.random() * 100 + 'vw'; firework.style.bottom = '0'; firework.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`; document.body.appendChild(firework); setTimeout(() => firework.remove(), 4000); } setInterval(createFirework, 
