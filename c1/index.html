@@ -30,6 +30,17 @@
 			width: '100%',
 			height: '100%'
 		});
+		const fechaObjetivo = new Date('December 29, 2024 00:00:00').getTime();
+		const intervalo = setInterval(function() {
+            		const ahora = new Date().getTime();
+           		const distancia = fechaObjetivo - ahora;
+			if (distancia >= 0) { 
+                		setTimeout(function(){
+                    			location.href="https://dasiller.github.io/dashost/c1.html";
+                		}, 2000);
+                		clearInterval(intervalo);
+            }
+        }, 1000);
 	</script>
 
 	<!-- Scripts Configuración ScrollReveal.js -->
