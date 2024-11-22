@@ -67,6 +67,7 @@
             if (distancia < 0) {
                 clearInterval(intervalo);
                 document.getElementById('cuenta-regresiva').innerHTML = "Feliz mi propio cumpleaños :)";
+                function createFirework() { const firework = document.createElement('div'); firework.className = 'firework'; firework.style.left = Math.random() * 100 + 'vw'; firework.style.bottom = '0'; firework.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`; document.body.appendChild(firework); setTimeout(() => firework.remove(), 4000); } setInterval(createFirework, 
             }
         }, 1000);
     </script>
